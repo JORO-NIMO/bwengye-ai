@@ -1,1 +1,13 @@
 project_id = "vurnvrdsowmskhvxwmfa"
+
+[functions.ai-chat]
+verify_jwt = true
+
+[functions.ai-image-generation]
+verify_jwt = true
+
+[functions.ai-model-router]
+verify_jwt = true
+
+[functions.user-analytics]
+verify_jwt = true
