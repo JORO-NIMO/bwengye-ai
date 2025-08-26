@@ -1,14 +1,12 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Optimize crawl budget
+Crawl-delay: 1
+
+# Important pages
+Allow: /auth
+Allow: /chat
+
+# Sitemap location
+Sitemap: https://bwengye-ai.lovable.app/sitemap.xml

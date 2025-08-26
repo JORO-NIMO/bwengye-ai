@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Brain, Zap, Globe, Shield } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/ai-empowerment-hero.jpg";
 import aiLogo from "@/assets/bwengye-ai-logo.png";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
@@ -44,11 +47,21 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => navigate("/auth")}
+            >
               Experience Bwengye AI
             </Button>
-            <Button variant="glow" size="lg" className="text-lg px-8 py-4">
-              Watch Demo
+            <Button 
+              variant="glow" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => navigate("/auth")}
+            >
+              Get Started Free
             </Button>
           </div>
           

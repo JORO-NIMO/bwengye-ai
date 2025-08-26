@@ -105,7 +105,8 @@ const AIDemo = () => {
         
         {/* Note about demo */}
         <p className="text-center text-sm text-muted-foreground mt-6">
-          This is a demo interface. Real AI functionality requires backend infrastructure.
+          This is a demo interface. <strong>Real AI functionality is now available!</strong> 
+          <br />Sign up to experience the full power of Bwengye AI.
         </p>
       </div>
     </section>
